@@ -18,3 +18,8 @@ export default function RootLayout({
     </html>
   );
 }
+export const metadata = {
+  verification: {
+    google: "eArPaj_0AwOcGYrt_RuqjhqX64k"
+  }
+};
