@@ -364,7 +364,7 @@ export default function Page() {
             <div className="mt-10 flex flex-wrap gap-4">
               <a
                 href="#technology"
-                className="rounded-full bg-white px-6 py-3 text-sm font-medium text-slate-950 transition hover:bg-slate-200"
+                className="rounded-full bg-white px-6 py-3 text-black font-semibold text-[#0b1b33] transition hover:bg-slate-200"
               >
                 {t.hero.primary}
               </a>
@@ -461,35 +461,56 @@ export default function Page() {
       </section>
 
       <section id="technology" className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,#0a1930_0%,#091424_100%)]" />
-        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-10">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#74b7ff]">
-            {t.tech.kicker}
-          </p>
-          <h2 className="mt-4 max-w-3xl text-3xl font-semibold leading-tight text-white sm:text-4xl">
-            {t.tech.title}
-          </h2>
-          <p className="mt-6 max-w-3xl text-base leading-8 text-white/70 sm:text-lg">
-            {t.tech.intro}
-          </p>
+        <div className="absolute inset-0">
+          <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="h-full w-full object-cover"
+    >
+      <source src="/hero-bg.webm" type="video/webm" />
+      <source src="/hero-bg.mp4" type="video/mp4" />
+    </video>
+  </div>
 
-          <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {t.tech.cards.map((card) => (
-              <div
-                key={card.title}
-                className="rounded-[28px] border border-white/10 bg-white/[0.04] p-7 backdrop-blur"
-              >
-                <h3 className="text-xl font-semibold text-white">
-                  {card.title}
-                </h3>
-                <p className="mt-4 text-sm leading-7 text-white/70">
-                  {card.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,10,20,0.72)_0%,rgba(6,16,28,0.78)_45%,rgba(8,20,38,0.88)_100%)]" />
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(64,150,255,0.18),transparent_20%),radial-gradient(circle_at_20%_30%,rgba(19,107,214,0.12),transparent_24%)]" />
+  <div className="absolute inset-0 opacity-[0.06] [background-image:linear-gradient(rgba(255,255,255,0.25)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.25)_1px,transparent_1px)] [background-size:72px_72px]" />
+
+  <div className="relative mx-auto grid min-h-[88vh] max-w-7xl items-center gap-14 px-6 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:px-10 lg:py-28">
+    <div>
+      <div className="inline-flex items-center rounded-full border border-white/12 bg-white/6 px-4 py-2 text-xs uppercase tracking-[0.22em] text-white/72">
+        {t.hero.kicker}
+      </div>
+
+      <h1 className="mt-8 max-w-4xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-7xl">
+        {t.hero.title}
+      </h1>
+
+      <p className="mt-7 max-w-2xl text-base leading-8 text-white/78 sm:text-lg">
+        {t.hero.subtitle}
+      </p>
+
+      <div className="mt-10 flex flex-wrap gap-4">
+        <a
+          href="#technology"
+          className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#0b1b33] transition hover:bg-slate-200"
+        >
+          {t.hero.primary}
+        </a>
+        <a
+          href="#contact"
+          className="rounded-full border border-white/18 bg-white/5 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10"
+        >
+          {t.hero.secondary}
+        </a>
+      </div>
+    </div>
+
+    <div className="hidden lg:block" />
+  </div>
+</section>
 
       <section id="applications" className="bg-white text-slate-900">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10">
