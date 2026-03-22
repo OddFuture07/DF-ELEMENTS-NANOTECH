@@ -344,38 +344,57 @@ export default function Page() {
         </div>
       </header>
 
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(64,150,255,0.22),transparent_18%),radial-gradient(circle_at_20%_30%,rgba(19,107,214,0.18),transparent_22%),linear-gradient(180deg,#06101c_0%,#081526_45%,#0a1d33_100%)]" />
-        <div className="absolute inset-0 opacity-[0.08] [background-image:linear-gradient(rgba(255,255,255,0.25)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.25)_1px,transparent_1px)] [background-size:72px_72px]" />
-        <div className="relative mx-auto grid min-h-[88vh] max-w-7xl items-center gap-14 px-6 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:px-10 lg:py-28">
-          <div>
-            <div className="inline-flex items-center rounded-full border border-white/12 bg-white/6 px-4 py-2 text-xs uppercase tracking-[0.22em] text-white/72">
-              {t.hero.kicker}
-            </div>
+<section className="relative overflow-hidden">
+  <div className="absolute inset-0">
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="h-full w-full object-cover"
+    >
+      <source src="/hero-bg.webm" type="video/webm" />
+      <source src="/hero-bg.mp4" type="video/mp4" />
+    </video>
+  </div>
 
-            <h1 className="mt-8 max-w-4xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-7xl">
-              {t.hero.title}
-            </h1>
+  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,10,20,0.72)_0%,rgba(6,16,28,0.78)_45%,rgba(8,20,38,0.88)_100%)]" />
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(64,150,255,0.18),transparent_20%),radial-gradient(circle_at_20%_30%,rgba(19,107,214,0.12),transparent_24%)]" />
+  <div className="absolute inset-0 opacity-[0.06] [background-image:linear-gradient(rgba(255,255,255,0.25)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.25)_1px,transparent_1px)] [background-size:72px_72px]" />
 
-            <p className="mt-7 max-w-2xl text-base leading-8 text-white/72 sm:text-lg">
-              {t.hero.subtitle}
-            </p>
+  <div className="relative mx-auto grid min-h-[88vh] max-w-7xl items-center gap-14 px-6 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:px-10 lg:py-28">
+    <div>
+      <div className="inline-flex items-center rounded-full border border-white/12 bg-white/6 px-4 py-2 text-xs uppercase tracking-[0.22em] text-white/72">
+        {t.hero.kicker}
+      </div>
 
-            <div className="mt-10 flex flex-wrap gap-4">
-              <a
-                href="#technology"
-                className="rounded-full bg-white px-6 py-3 text-black font-semibold text-[#0b1b33] transition hover:bg-slate-200"
-              >
-                {t.hero.primary}
-              </a>
-              <a
-                href="#contact"
-                className="rounded-full border border-white/18 bg-white/5 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10"
-              >
-                {t.hero.secondary}
-              </a>
-            </div>
-          </div>
+      <h1 className="mt-8 max-w-4xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-7xl">
+        {t.hero.title}
+      </h1>
+
+      <p className="mt-7 max-w-2xl text-base leading-8 text-white/78 sm:text-lg">
+        {t.hero.subtitle}
+      </p>
+
+      <div className="mt-10 flex flex-wrap gap-4">
+        <a
+          href="#technology"
+          className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#0b1b33] transition hover:bg-slate-200"
+        >
+          {t.hero.primary}
+        </a>
+        <a
+          href="#contact"
+          className="rounded-full border border-white/18 bg-white/5 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10"
+        >
+          {t.hero.secondary}
+        </a>
+      </div>
+    </div>
+
+    <div className="hidden lg:block" />
+  </div>
+</section>
 
           <div className="flex justify-center lg:justify-end">
             <div className="relative h-[400px] w-full max-w-[520px] overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.04] shadow-[0_30px_100px_rgba(0,0,0,0.35)] backdrop-blur">
