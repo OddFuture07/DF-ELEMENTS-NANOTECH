@@ -1,10 +1,12 @@
 import "./globals.css";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "DF Elements Nanotech",
-  description:
-    "DF Elements Nanotech develops advanced deuterium-enabled materials for next-generation OLED and optoelectronic applications."
+  description: "...",
+  verification: {
+    google: "eArPaj_0AwOcGYrt_RuqjhqX64k"
+  }
 };
 
 export default function RootLayout({
@@ -18,8 +20,3 @@ export default function RootLayout({
     </html>
   );
 }
-export const metadata = {
-  verification: {
-    google: "eArPaj_0AwOcGYrt_RuqjhqX64k"
-  }
-};
