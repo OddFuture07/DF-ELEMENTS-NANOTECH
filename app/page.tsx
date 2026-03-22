@@ -344,27 +344,24 @@ export default function Page() {
         </div>
       </header>
 
-<section className="relative overflow-hidden">
+<section className="relative overflow-hidden bg-[#07111f]">
   <div className="absolute inset-0">
     <video
       autoPlay
       muted
       loop
       playsInline
-      className="h-full w-full object-cover"
+      className="h-full w-full object-cover opacity-30"
     >
-      <source src="/hero-bg.webm" type="video/webm" />
       <source src="/hero-bg.mp4" type="video/mp4" />
     </video>
   </div>
 
-  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,10,20,0.72)_0%,rgba(6,16,28,0.78)_45%,rgba(8,20,38,0.88)_100%)]" />
-  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(64,150,255,0.18),transparent_20%),radial-gradient(circle_at_20%_30%,rgba(19,107,214,0.12),transparent_24%)]" />
-  <div className="absolute inset-0 opacity-[0.06] [background-image:linear-gradient(rgba(255,255,255,0.25)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.25)_1px,transparent_1px)] [background-size:72px_72px]" />
+  <div className="absolute inset-0 bg-black/45" />
 
   <div className="relative mx-auto grid min-h-[88vh] max-w-7xl items-center gap-14 px-6 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:px-10 lg:py-28">
     <div>
-      <div className="inline-flex items-center rounded-full border border-white/12 bg-white/6 px-4 py-2 text-xs uppercase tracking-[0.22em] text-white/72">
+      <div className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.22em] text-white/75">
         {t.hero.kicker}
       </div>
 
@@ -372,7 +369,7 @@ export default function Page() {
         {t.hero.title}
       </h1>
 
-      <p className="mt-7 max-w-2xl text-base leading-8 text-white/78 sm:text-lg">
+      <p className="mt-7 max-w-2xl text-base leading-8 text-white/80 sm:text-lg">
         {t.hero.subtitle}
       </p>
 
@@ -385,7 +382,7 @@ export default function Page() {
         </a>
         <a
           href="#contact"
-          className="rounded-full border border-white/18 bg-white/5 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10"
+          className="rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10"
         >
           {t.hero.secondary}
         </a>
