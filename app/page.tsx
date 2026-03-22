@@ -396,9 +396,9 @@ export default function Page() {
             <div className="mt-10 flex flex-wrap gap-4">
               <a
                 href="#technology"
-                className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-200"
+                className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#0a1630] transition hover:bg-slate-200"
               >
-                {t.hero.primary}
+                <span className="text-[#0a1630]">{t.hero.primary}</span>
               </a>
               <a
                 href="#contact"
@@ -601,9 +601,9 @@ export default function Page() {
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
               href={`mailto:${t.contact.email}`}
-              className="rounded-full bg-slate-950 px-6 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
+              className="rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
             >
-              {t.contact.primary}
+              <span className="text-white">{t.contact.primary}</span>
             </a>
             <a
               href="https://www.dfelements.com.au"
