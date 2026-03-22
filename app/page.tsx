@@ -19,23 +19,27 @@ export default function Page() {
           cta: "Get in Touch",
         },
         hero: {
-          kicker: "Advanced Deuterated Blue-Emitting Materials",
+          kicker: "ADVANCED DEUTERATED BLUE-EMITTING MATERIALS",
           title: "Powering a new blue-light engine through deuterium innovation",
           subtitle:
             "DF Elements Nanotech develops advanced deuterated blue-emitting materials designed to improve molecular stability, extend device lifetime, and unlock the next generation of OLED and optoelectronic performance.",
           primary: "Explore Technology",
           secondary: "Contact Us",
+          card1Label: "DF ELEMENTS",
+          card1Title: "Blue OLED Materials",
+          card2Label: "PLATFORM",
+          card2Title: "Deuterium Innovation",
         },
         about: {
-          kicker: "About",
+          kicker: "ABOUT",
           title: "Built on science. Positioned for industry.",
           body1:
             "DF Elements Nanotech is an advanced materials company focused on deuterated blue-emitting material innovation. We aim to bridge cutting-edge material science with commercial application in next-generation OLED and optoelectronic systems.",
           body2:
             "By combining molecular engineering, material design, and commercialization thinking, we are working to address one of the most demanding challenges in display technology: the stability and lifetime of blue-emitting materials.",
         },
-        stats: {
-          kicker: "At a Glance",
+        overview: {
+          kicker: "AT A GLANCE",
           title: "A focused platform for the future of blue OLED",
           items: [
             {
@@ -57,7 +61,7 @@ export default function Page() {
           ],
         },
         tech: {
-          kicker: "Technology",
+          kicker: "TECHNOLOGY",
           title: "Why deuterated materials matter",
           intro:
             "In advanced emissive systems, blue materials remain one of the key performance bottlenecks. DF Elements focuses on deuteration-led material innovation to improve molecular robustness, enhance operational durability, and support the next wave of high-performance display applications.",
@@ -81,25 +85,28 @@ export default function Page() {
           ],
         },
         applications: {
-          kicker: "Applications",
+          kicker: "APPLICATIONS",
           title: "Designed for advanced display and optoelectronic applications",
           cards: [
             {
+              number: "01",
               title: "Premium Consumer Displays",
               desc: "Supporting high-performance display systems where efficiency, colour quality, and operating lifetime matter.",
             },
             {
-              title: "Wearables & Compact Devices",
+              number: "02",
+              title: "Wearables and Compact Devices",
               desc: "Enabling more durable material solutions for compact, high-value display formats and emerging smart devices.",
             },
             {
+              number: "03",
               title: "Next-Generation Optoelectronics",
               desc: "Opening future possibilities across advanced light-emitting and material-intensive technologies.",
             },
           ],
         },
         partnership: {
-          kicker: "Partnership",
+          kicker: "PARTNERSHIP",
           title: "Open to research, industry, and strategic collaboration",
           body:
             "We welcome conversations with research institutions, manufacturing partners, investors, and commercial stakeholders interested in the future of advanced OLED material platforms.",
@@ -111,7 +118,7 @@ export default function Page() {
           ],
         },
         contact: {
-          kicker: "Contact",
+          kicker: "CONTACT",
           title: "Let’s build the next generation of materials together",
           body:
             "DF Elements Nanotech welcomes enquiries from research collaborators, industrial partners, investors, and strategic stakeholders.",
@@ -121,8 +128,8 @@ export default function Page() {
           secondary: "Visit Website",
         },
         footer: {
-          line1: "DF Elements Nanotech",
-          line2: "Advanced materials for the future of display technology.",
+          name: "DF Elements Nanotech",
+          line: "Advanced materials for the future of display technology.",
           copy: "© 2026 DF Elements Nanotech. All rights reserved.",
         },
       },
@@ -142,6 +149,10 @@ export default function Page() {
             "DF Elements Nanotech 专注于先进氘代蓝光材料研发，致力于提升蓝光发光体系的分子稳定性、器件寿命与产业化潜力，服务下一代 OLED 与高性能光电材料应用。",
           primary: "查看技术",
           secondary: "联系我们",
+          card1Label: "DF ELEMENTS",
+          card1Title: "蓝光 OLED 材料",
+          card2Label: "PLATFORM",
+          card2Title: "氘代创新平台",
         },
         about: {
           kicker: "关于我们",
@@ -151,7 +162,7 @@ export default function Page() {
           body2:
             "我们结合分子工程、材料设计与商业化思维，努力解决显示技术中最具挑战性的核心问题之一：蓝光发光材料的稳定性与寿命。",
         },
-        stats: {
+        overview: {
           kicker: "核心概览",
           title: "面向蓝光 OLED 未来的聚焦型材料平台",
           items: [
@@ -202,14 +213,17 @@ export default function Page() {
           title: "面向先进显示与光电应用",
           cards: [
             {
+              number: "01",
               title: "高端消费显示",
               desc: "服务对效率、色彩表现与寿命要求更高的高性能显示系统。",
             },
             {
+              number: "02",
               title: "可穿戴与紧凑设备",
               desc: "为小型化、高附加值显示终端提供更耐久的材料解决方案。",
             },
             {
+              number: "03",
               title: "新一代光电技术",
               desc: "拓展至先进发光及高性能材料密集型技术场景的未来机会。",
             },
@@ -233,8 +247,8 @@ export default function Page() {
           secondary: "访问网站",
         },
         footer: {
-          line1: "DF Elements Nanotech",
-          line2: "面向未来显示技术的先进材料平台。",
+          name: "DF Elements Nanotech",
+          line: "面向未来显示技术的先进材料平台。",
           copy: "© 2026 DF Elements Nanotech. 版权所有。",
         },
       },
@@ -244,8 +258,8 @@ export default function Page() {
   }, [lang]);
 
   return (
-    <main className="bg-[#06101c] text-white">
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-[#06101c]/85 backdrop-blur">
+    <main className="min-h-screen bg-slate-950 text-white">
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
           <a href="/" className="flex items-center gap-3">
             <img
@@ -253,18 +267,18 @@ export default function Page() {
               alt="DF Elements Nanotech Logo"
               className="h-10 w-auto sm:h-12"
             />
-            <div className="hidden leading-tight sm:block">
-              <div className="text-sm font-semibold tracking-[0.2em] text-white">
+            <div className="hidden sm:block">
+              <div className="text-sm font-semibold tracking-[0.22em] text-white">
                 DF ELEMENTS
               </div>
-              <div className="text-xs uppercase tracking-[0.22em] text-white/55">
-                Nanotech
+              <div className="text-xs tracking-[0.28em] text-white/60">
+                NANOTECH
               </div>
             </div>
           </a>
 
           <div className="hidden items-center gap-8 md:flex">
-            <nav className="flex items-center gap-7 text-sm text-white/78">
+            <nav className="flex items-center gap-7 text-sm text-white/80">
               <a href="#about" className="transition hover:text-white">
                 {t.nav.about}
               </a>
@@ -282,26 +296,26 @@ export default function Page() {
               </a>
             </nav>
 
-            <div className="flex items-center rounded-full border border-white/15 bg-white/5 p-1 text-sm">
+            <div className="flex items-center rounded-full border border-white/15 bg-white/5 p-1">
               <button
                 type="button"
                 onClick={() => setLang("en")}
-                className={`rounded-full px-3 py-1.5 transition ${
+                className={
                   lang === "en"
-                    ? "bg-white text-slate-900"
-                    : "text-white/70 hover:text-white"
-                }`}
+                    ? "rounded-full bg-white px-3 py-1.5 text-sm font-medium text-slate-900"
+                    : "rounded-full px-3 py-1.5 text-sm font-medium text-white/70 transition hover:text-white"
+                }
               >
                 EN
               </button>
               <button
                 type="button"
                 onClick={() => setLang("zh")}
-                className={`rounded-full px-3 py-1.5 transition ${
+                className={
                   lang === "zh"
-                    ? "bg-white text-slate-900"
-                    : "text-white/70 hover:text-white"
-                }`}
+                    ? "rounded-full bg-white px-3 py-1.5 text-sm font-medium text-slate-900"
+                    : "rounded-full px-3 py-1.5 text-sm font-medium text-white/70 transition hover:text-white"
+                }
               >
                 中文
               </button>
@@ -309,33 +323,33 @@ export default function Page() {
 
             <a
               href="#contact"
-              className="rounded-full border border-[#4da3ff]/40 bg-[#0e2340] px-5 py-2.5 text-sm font-medium text-white transition hover:border-[#4da3ff] hover:bg-[#14325d]"
+              className="rounded-full border border-blue-400/30 bg-blue-950/40 px-5 py-2.5 text-sm font-medium text-white transition hover:border-blue-300 hover:bg-blue-900/50"
             >
               {t.nav.cta}
             </a>
           </div>
 
-          <div className="flex items-center gap-2 md:hidden">
-            <div className="flex items-center rounded-full border border-white/15 bg-white/5 p-1 text-xs">
+          <div className="md:hidden">
+            <div className="flex items-center rounded-full border border-white/15 bg-white/5 p-1">
               <button
                 type="button"
                 onClick={() => setLang("en")}
-                className={`rounded-full px-2.5 py-1 transition ${
+                className={
                   lang === "en"
-                    ? "bg-white text-slate-900"
-                    : "text-white/70"
-                }`}
+                    ? "rounded-full bg-white px-3 py-1.5 text-sm font-medium text-slate-900"
+                    : "rounded-full px-3 py-1.5 text-sm font-medium text-white/70"
+                }
               >
                 EN
               </button>
               <button
                 type="button"
                 onClick={() => setLang("zh")}
-                className={`rounded-full px-2.5 py-1 transition ${
+                className={
                   lang === "zh"
-                    ? "bg-white text-slate-900"
-                    : "text-white/70"
-                }`}
+                    ? "rounded-full bg-white px-3 py-1.5 text-sm font-medium text-slate-900"
+                    : "rounded-full px-3 py-1.5 text-sm font-medium text-white/70"
+                }
               >
                 中文
               </button>
@@ -344,86 +358,89 @@ export default function Page() {
         </div>
       </header>
 
-<section className="relative overflow-hidden bg-[#07111f]">
-  <div className="absolute inset-0">
-    <video
-      autoPlay
-      muted
-      loop
-      playsInline
-      className="h-full w-full object-cover opacity-30"
-    >
-      <source src="/hero-bg.mp4" type="video/mp4" />
-    </video>
-  </div>
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="h-full w-full object-cover"
+          >
+            <source src="/hero.bg.mp4" type="video/mp4" />
+          </video>
+        </div>
 
-  <div className="absolute inset-0 bg-black/45" />
+        <div className="absolute inset-0 bg-slate-950/65" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/55 to-blue-950/35" />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/35 via-transparent to-slate-950/80" />
 
-  <div className="relative mx-auto grid min-h-[88vh] max-w-7xl items-center gap-14 px-6 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:px-10 lg:py-28">
-    <div>
-      <div className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.22em] text-white/75">
-        {t.hero.kicker}
-      </div>
+        <div className="absolute inset-0 opacity-10">
+          <div className="h-full w-full bg-[linear-gradient(to_right,rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.12)_1px,transparent_1px)] bg-[size:72px_72px]" />
+        </div>
 
-      <h1 className="mt-8 max-w-4xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-7xl">
-        {t.hero.title}
-      </h1>
+        <div className="relative mx-auto grid min-h-[88vh] max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:px-10 lg:py-28">
+          <div>
+            <div className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-medium tracking-[0.25em] text-white/80">
+              {t.hero.kicker}
+            </div>
 
-      <p className="mt-7 max-w-2xl text-base leading-8 text-white/80 sm:text-lg">
-        {t.hero.subtitle}
-      </p>
+            <h1 className="mt-8 max-w-4xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-7xl">
+              {t.hero.title}
+            </h1>
 
-      <div className="mt-10 flex flex-wrap gap-4">
-        <a
-          href="#technology"
-          className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#0b1b33] transition hover:bg-slate-200"
-        >
-          {t.hero.primary}
-        </a>
-        <a
-          href="#contact"
-          className="rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10"
-        >
-          {t.hero.secondary}
-        </a>
-      </div>
-    </div>
+            <p className="mt-8 max-w-2xl text-base leading-8 text-white/80 sm:text-lg">
+              {t.hero.subtitle}
+            </p>
 
-    <div className="hidden lg:block" />
-  </div>
-</section>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <a
+                href="#technology"
+                className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-200"
+              >
+                {t.hero.primary}
+              </a>
+              <a
+                href="#contact"
+                className="rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10"
+              >
+                {t.hero.secondary}
+              </a>
+            </div>
+          </div>
 
           <div className="flex justify-center lg:justify-end">
-            <div className="relative h-[400px] w-full max-w-[520px] overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.04] shadow-[0_30px_100px_rgba(0,0,0,0.35)] backdrop-blur">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(92,170,255,0.45),transparent_18%),radial-gradient(circle_at_35%_65%,rgba(36,101,189,0.4),transparent_22%),radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.08),transparent_35%)]" />
-              <div className="absolute inset-6 rounded-[26px] border border-white/10" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative h-72 w-72 rounded-full border border-[#74b7ff]/25">
-                  <div className="absolute inset-8 rounded-full border border-[#74b7ff]/20" />
-                  <div className="absolute inset-16 rounded-full border border-[#74b7ff]/20" />
-                  <div className="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white shadow-[0_0_30px_rgba(255,255,255,0.8)]" />
-                  <div className="absolute left-[18%] top-[36%] h-3 w-3 rounded-full bg-[#9cd0ff] shadow-[0_0_18px_rgba(156,208,255,0.9)]" />
-                  <div className="absolute right-[20%] top-[28%] h-2.5 w-2.5 rounded-full bg-[#72b7ff] shadow-[0_0_18px_rgba(114,183,255,0.9)]" />
-                  <div className="absolute bottom-[19%] left-[32%] h-3 w-3 rounded-full bg-[#d8efff] shadow-[0_0_18px_rgba(216,239,255,0.9)]" />
-                  <div className="absolute bottom-[28%] right-[26%] h-2.5 w-2.5 rounded-full bg-[#85c4ff] shadow-[0_0_18px_rgba(133,196,255,0.9)]" />
+            <div className="w-full max-w-md rounded-[32px] border border-white/10 bg-slate-900/35 p-6 shadow-2xl backdrop-blur-sm">
+              <div className="rounded-[26px] border border-white/10 p-6">
+                <div className="flex h-72 items-center justify-center rounded-[24px] border border-blue-300/10 bg-gradient-to-br from-slate-900/60 to-blue-950/30">
+                  <div className="relative h-56 w-56 rounded-full border border-blue-200/20">
+                    <div className="absolute inset-6 rounded-full border border-blue-200/15" />
+                    <div className="absolute inset-12 rounded-full border border-blue-200/15" />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="h-4 w-4 rounded-full bg-white shadow-lg shadow-white/50" />
+                    </div>
+                    <div className="absolute left-6 top-24 h-3 w-3 rounded-full bg-blue-200 shadow-md shadow-blue-200/60" />
+                    <div className="absolute right-10 top-14 h-2.5 w-2.5 rounded-full bg-blue-300 shadow-md shadow-blue-300/60" />
+                    <div className="absolute bottom-10 right-8 h-3 w-3 rounded-full bg-sky-200 shadow-md shadow-sky-200/60" />
+                  </div>
                 </div>
-              </div>
 
-              <div className="absolute bottom-6 left-6 right-6 grid gap-3 sm:grid-cols-2">
-                <div className="rounded-2xl border border-white/10 bg-[#08111e]/85 p-4">
-                  <div className="text-xs uppercase tracking-[0.2em] text-white/45">
-                    DF ELEMENTS
+                <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                  <div className="rounded-[24px] border border-white/10 bg-slate-950/70 p-4">
+                    <div className="text-xs tracking-[0.24em] text-white/45">
+                      {t.hero.card1Label}
+                    </div>
+                    <div className="mt-3 text-xl font-medium text-white">
+                      {t.hero.card1Title}
+                    </div>
                   </div>
-                  <div className="mt-2 text-lg font-medium text-white">
-                    Blue OLED Materials
-                  </div>
-                </div>
-                <div className="rounded-2xl border border-white/10 bg-[#08111e]/85 p-4">
-                  <div className="text-xs uppercase tracking-[0.2em] text-white/45">
-                    PLATFORM
-                  </div>
-                  <div className="mt-2 text-lg font-medium text-white">
-                    Deuterium Innovation
+                  <div className="rounded-[24px] border border-white/10 bg-slate-950/70 p-4">
+                    <div className="text-xs tracking-[0.24em] text-white/45">
+                      {t.hero.card2Label}
+                    </div>
+                    <div className="mt-3 text-xl font-medium text-white">
+                      {t.hero.card2Title}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -433,9 +450,9 @@ export default function Page() {
       </section>
 
       <section id="about" className="bg-white text-slate-900">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-24 lg:grid-cols-[0.8fr_1.2fr] lg:px-10">
+        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-24 lg:grid-cols-2 lg:px-10">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#256bd2]">
+            <p className="text-xs font-semibold tracking-[0.24em] text-blue-700">
               {t.about.kicker}
             </p>
             <h2 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl">
@@ -449,17 +466,17 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="bg-[#f4f7fb] text-slate-900">
+      <section className="bg-slate-100 text-slate-900">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#256bd2]">
-            {t.stats.kicker}
+          <p className="text-xs font-semibold tracking-[0.24em] text-blue-700">
+            {t.overview.kicker}
           </p>
           <h2 className="mt-4 max-w-3xl text-3xl font-semibold leading-tight sm:text-4xl">
-            {t.stats.title}
+            {t.overview.title}
           </h2>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {t.stats.items.map((item) => (
+            {t.overview.items.map((item) => (
               <div
                 key={item.title}
                 className="rounded-[28px] border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
@@ -476,61 +493,39 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="technology" className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <video
-      autoPlay
-      muted
-      loop
-      playsInline
-      className="h-full w-full object-cover"
-    >
-      <source src="/hero-bg.webm" type="video/webm" />
-      <source src="/hero-bg.mp4" type="video/mp4" />
-    </video>
-  </div>
+      <section id="technology" className="bg-slate-950 text-white">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10">
+          <p className="text-xs font-semibold tracking-[0.24em] text-blue-300">
+            {t.tech.kicker}
+          </p>
+          <h2 className="mt-4 max-w-3xl text-3xl font-semibold leading-tight sm:text-4xl">
+            {t.tech.title}
+          </h2>
+          <p className="mt-6 max-w-3xl text-base leading-8 text-white/75 sm:text-lg">
+            {t.tech.intro}
+          </p>
 
-  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,10,20,0.72)_0%,rgba(6,16,28,0.78)_45%,rgba(8,20,38,0.88)_100%)]" />
-  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(64,150,255,0.18),transparent_20%),radial-gradient(circle_at_20%_30%,rgba(19,107,214,0.12),transparent_24%)]" />
-  <div className="absolute inset-0 opacity-[0.06] [background-image:linear-gradient(rgba(255,255,255,0.25)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.25)_1px,transparent_1px)] [background-size:72px_72px]" />
-
-  <div className="relative mx-auto grid min-h-[88vh] max-w-7xl items-center gap-14 px-6 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:px-10 lg:py-28">
-    <div>
-      <div className="inline-flex items-center rounded-full border border-white/12 bg-white/6 px-4 py-2 text-xs uppercase tracking-[0.22em] text-white/72">
-        {t.hero.kicker}
-      </div>
-
-      <h1 className="mt-8 max-w-4xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-7xl">
-        {t.hero.title}
-      </h1>
-
-      <p className="mt-7 max-w-2xl text-base leading-8 text-white/78 sm:text-lg">
-        {t.hero.subtitle}
-      </p>
-
-      <div className="mt-10 flex flex-wrap gap-4">
-        <a
-          href="#technology"
-          className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#0b1b33] transition hover:bg-slate-200"
-        >
-          {t.hero.primary}
-        </a>
-        <a
-          href="#contact"
-          className="rounded-full border border-white/18 bg-white/5 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10"
-        >
-          {t.hero.secondary}
-        </a>
-      </div>
-    </div>
-
-    <div className="hidden lg:block" />
-  </div>
-</section>
+          <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {t.tech.cards.map((card) => (
+              <div
+                key={card.title}
+                className="rounded-[28px] border border-white/10 bg-white/5 p-7 backdrop-blur-sm"
+              >
+                <h3 className="text-xl font-semibold text-white">
+                  {card.title}
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-white/70">
+                  {card.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section id="applications" className="bg-white text-slate-900">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#256bd2]">
+          <p className="text-xs font-semibold tracking-[0.24em] text-blue-700">
             {t.applications.kicker}
           </p>
           <h2 className="mt-4 max-w-4xl text-3xl font-semibold leading-tight sm:text-4xl">
@@ -538,20 +533,18 @@ export default function Page() {
           </h2>
 
           <div className="mt-14 grid gap-6 lg:grid-cols-3">
-            {t.applications.cards.map((card, index) => (
+            {t.applications.cards.map((card) => (
               <div
                 key={card.title}
-                className="group overflow-hidden rounded-[30px] border border-slate-200 bg-[#f7f9fc] transition hover:-translate-y-1 hover:shadow-xl"
+                className="overflow-hidden rounded-[30px] border border-slate-200 bg-slate-50 transition hover:-translate-y-1 hover:shadow-xl"
               >
-                <div className="h-56 bg-[linear-gradient(135deg,#0d203d_0%,#12386d_55%,#2f79d5_100%)] p-6 text-white">
-                  <div className="flex h-full items-end">
-                    <div>
-                      <div className="text-xs uppercase tracking-[0.2em] text-white/55">
-                        0{index + 1}
-                      </div>
-                      <div className="mt-3 text-2xl font-semibold leading-snug">
-                        {card.title}
-                      </div>
+                <div className="flex h-56 items-end bg-gradient-to-br from-slate-900 via-blue-950 to-blue-700 p-6 text-white">
+                  <div>
+                    <div className="text-xs tracking-[0.24em] text-white/55">
+                      {card.number}
+                    </div>
+                    <div className="mt-3 text-2xl font-semibold leading-snug">
+                      {card.title}
                     </div>
                   </div>
                 </div>
@@ -566,16 +559,16 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="partnership" className="bg-[#08111d] text-white">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-24 lg:grid-cols-[1.05fr_0.95fr] lg:px-10">
+      <section id="partnership" className="bg-slate-900 text-white">
+        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-24 lg:grid-cols-2 lg:px-10">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#74b7ff]">
+            <p className="text-xs font-semibold tracking-[0.24em] text-blue-300">
               {t.partnership.kicker}
             </p>
             <h2 className="mt-4 max-w-3xl text-3xl font-semibold leading-tight sm:text-4xl">
               {t.partnership.title}
             </h2>
-            <p className="mt-6 max-w-2xl text-base leading-8 text-white/72 sm:text-lg">
+            <p className="mt-6 max-w-2xl text-base leading-8 text-white/75 sm:text-lg">
               {t.partnership.body}
             </p>
           </div>
@@ -584,7 +577,7 @@ export default function Page() {
             {t.partnership.items.map((item) => (
               <div
                 key={item}
-                className="rounded-[28px] border border-white/10 bg-white/[0.04] p-7"
+                className="rounded-[28px] border border-white/10 bg-white/5 p-7"
               >
                 <div className="text-lg font-medium text-white">{item}</div>
               </div>
@@ -593,9 +586,9 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="contact" className="bg-[#f5f8fc] text-slate-900">
+      <section id="contact" className="bg-slate-100 text-slate-900">
         <div className="mx-auto max-w-5xl px-6 py-24 text-center lg:px-10">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#256bd2]">
+          <p className="text-xs font-semibold tracking-[0.24em] text-blue-700">
             {t.contact.kicker}
           </p>
           <h2 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl">
@@ -616,7 +609,7 @@ export default function Page() {
               href="https://www.dfelements.com.au"
               target="_blank"
               rel="noreferrer"
-              className="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-900 transition hover:bg-slate-100"
+              className="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-900 transition hover:bg-slate-50"
             >
               {t.contact.secondary}
             </a>
@@ -624,16 +617,16 @@ export default function Page() {
 
           <div className="mt-12 grid gap-4 sm:grid-cols-2">
             <div className="rounded-[28px] border border-slate-200 bg-white p-6">
-              <div className="text-xs uppercase tracking-[0.2em] text-slate-400">
-                Email
+              <div className="text-xs tracking-[0.24em] text-slate-400">
+                EMAIL
               </div>
               <div className="mt-3 text-lg font-medium text-slate-900">
                 {t.contact.email}
               </div>
             </div>
             <div className="rounded-[28px] border border-slate-200 bg-white p-6">
-              <div className="text-xs uppercase tracking-[0.2em] text-slate-400">
-                Website
+              <div className="text-xs tracking-[0.24em] text-slate-400">
+                WEBSITE
               </div>
               <div className="mt-3 text-lg font-medium text-slate-900">
                 {t.contact.website}
@@ -643,11 +636,11 @@ export default function Page() {
         </div>
       </section>
 
-      <footer className="border-t border-white/10 bg-[#06101c] text-white/60">
+      <footer className="border-t border-white/10 bg-slate-950 text-white/60">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 lg:px-10 md:flex-row md:items-center md:justify-between">
           <div>
-            <div className="font-medium text-white">{t.footer.line1}</div>
-            <div className="mt-1 text-sm">{t.footer.line2}</div>
+            <div className="font-medium text-white">{t.footer.name}</div>
+            <div className="mt-1 text-sm">{t.footer.line}</div>
           </div>
           <div className="text-sm">{t.footer.copy}</div>
         </div>
