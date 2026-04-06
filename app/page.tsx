@@ -410,36 +410,109 @@ export default function Page() {
           </div>
 
           <div className="flex justify-center lg:justify-end">
-            <div className="w-full max-w-md rounded-[32px] border border-white/10 bg-slate-900/35 p-6 shadow-2xl backdrop-blur-sm">
-              <div className="rounded-[26px] border border-white/10 p-6">
-                <div className="flex h-72 items-center justify-center rounded-[24px] border border-blue-300/10 bg-gradient-to-br from-slate-900/60 to-blue-950/30">
-                  <div className="relative h-56 w-56 rounded-full border border-blue-200/20">
-                    <div className="absolute inset-6 rounded-full border border-blue-200/15" />
-                    <div className="absolute inset-12 rounded-full border border-blue-200/15" />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="h-4 w-4 rounded-full bg-white shadow-lg shadow-white/50" />
-                    </div>
-                    <div className="absolute left-6 top-24 h-3 w-3 rounded-full bg-blue-200 shadow-md shadow-blue-200/60" />
-                    <div className="absolute right-10 top-14 h-2.5 w-2.5 rounded-full bg-blue-300 shadow-md shadow-blue-300/60" />
-                    <div className="absolute bottom-10 right-8 h-3 w-3 rounded-full bg-sky-200 shadow-md shadow-sky-200/60" />
-                  </div>
-                </div>
+            <div className="relative w-full max-w-[560px]">
+              <div className="absolute -left-6 top-10 h-36 w-36 rounded-full bg-cyan-400/18 blur-3xl" />
+              <div className="absolute -right-6 bottom-6 h-40 w-40 rounded-full bg-blue-500/18 blur-3xl" />
 
-                <div className="mt-4 grid gap-4 sm:grid-cols-2">
-                  <div className="rounded-[24px] border border-white/10 bg-slate-950/70 p-4">
-                    <div className="text-xs tracking-[0.24em] text-white/45">
-                      {t.hero.card1Label}
+              <div className="relative overflow-hidden rounded-[36px] border border-white/12 bg-[linear-gradient(145deg,rgba(15,23,42,0.82),rgba(9,15,34,0.62))] p-5 shadow-[0_30px_80px_rgba(2,6,23,0.55)] backdrop-blur-xl sm:p-6">
+                <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(125,211,252,0.16),transparent_32%),radial-gradient(circle_at_80%_20%,rgba(96,165,250,0.16),transparent_24%),linear-gradient(180deg,rgba(255,255,255,0.08),transparent_38%)]" />
+
+                <div className="relative rounded-[30px] border border-white/10 bg-slate-950/30 p-4 sm:p-5">
+                  <div className="flex items-center justify-between rounded-[22px] border border-white/10 bg-white/[0.03] px-4 py-3">
+                    <div>
+                      <div className="text-[11px] uppercase tracking-[0.3em] text-white/40">
+                        {t.hero.card1Label}
+                      </div>
+                      <div className="mt-2 text-sm font-medium text-white/90">
+                        {t.hero.card1Title}
+                      </div>
                     </div>
-                    <div className="mt-3 text-xl font-medium text-white">
-                      {t.hero.card1Title}
+                    <div className="rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.28em] text-cyan-100">
+                      OLED
                     </div>
                   </div>
-                  <div className="rounded-[24px] border border-white/10 bg-slate-950/70 p-4">
-                    <div className="text-xs tracking-[0.24em] text-white/45">
-                      {t.hero.card2Label}
+
+                  <div className="relative mt-4 overflow-hidden rounded-[28px] border border-white/10 bg-[radial-gradient(circle_at_50%_40%,rgba(59,130,246,0.18),transparent_30%),linear-gradient(160deg,rgba(15,23,42,0.94),rgba(12,18,38,0.76))] px-4 py-6 sm:px-6">
+                    <div className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-cyan-200/40 to-transparent" />
+                    <div className="absolute left-1/2 top-10 h-28 w-28 -translate-x-1/2 rounded-full bg-cyan-300/15 blur-3xl" />
+
+                    <div className="relative mx-auto flex h-[280px] w-full max-w-[320px] items-center justify-center">
+                      <div className="absolute h-[280px] w-[280px] rounded-full border border-white/10" />
+                      <div className="absolute h-[220px] w-[220px] rounded-full border border-cyan-100/12" />
+                      <div className="absolute h-[156px] w-[156px] rounded-full border border-blue-200/14" />
+
+                      <div className="absolute left-[17%] top-[26%] h-px w-[32%] rotate-[18deg] bg-gradient-to-r from-transparent via-cyan-200/50 to-transparent" />
+                      <div className="absolute right-[14%] top-[38%] h-px w-[26%] -rotate-[36deg] bg-gradient-to-r from-transparent via-blue-200/50 to-transparent" />
+                      <div className="absolute bottom-[23%] left-[48%] h-px w-[28%] rotate-[28deg] bg-gradient-to-r from-transparent via-sky-200/50 to-transparent" />
+
+                      <div className="absolute inset-0 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.1)_0,transparent_62%)]" />
+                      <div className="relative z-10 h-5 w-5 rounded-full bg-white shadow-[0_0_30px_rgba(255,255,255,0.9)]" />
+                      <div className="absolute left-[16%] top-[42%] h-4 w-4 rounded-full bg-cyan-100 shadow-[0_0_24px_rgba(186,230,253,0.85)]" />
+                      <div className="absolute right-[17%] top-[24%] h-3.5 w-3.5 rounded-full bg-blue-300 shadow-[0_0_22px_rgba(147,197,253,0.8)]" />
+                      <div className="absolute bottom-[18%] right-[14%] h-4 w-4 rounded-full bg-sky-200 shadow-[0_0_24px_rgba(186,230,253,0.85)]" />
+
+                      <div className="absolute left-0 top-10 rounded-full border border-white/10 bg-slate-950/70 px-3 py-1.5 text-[11px] uppercase tracking-[0.26em] text-white/55 backdrop-blur">
+                        Stability
+                      </div>
+                      <div className="absolute right-0 top-20 rounded-full border border-white/10 bg-slate-950/70 px-3 py-1.5 text-[11px] uppercase tracking-[0.26em] text-white/55 backdrop-blur">
+                        Lifetime
+                      </div>
+                      <div className="absolute bottom-8 left-10 rounded-full border border-white/10 bg-slate-950/70 px-3 py-1.5 text-[11px] uppercase tracking-[0.26em] text-white/55 backdrop-blur">
+                        Precision
+                      </div>
                     </div>
-                    <div className="mt-3 text-xl font-medium text-white">
-                      {t.hero.card2Title}
+                  </div>
+
+                  <div className="mt-4 grid gap-4 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
+                    <div className="rounded-[24px] border border-white/10 bg-[linear-gradient(180deg,rgba(7,12,26,0.92),rgba(8,15,32,0.72))] p-5">
+                      <div className="flex items-start justify-between gap-4">
+                        <div>
+                          <div className="text-[11px] uppercase tracking-[0.3em] text-white/40">
+                            {t.hero.card2Label}
+                          </div>
+                          <div className="mt-3 max-w-[16rem] text-2xl font-medium leading-snug text-white">
+                            {t.hero.card2Title}
+                          </div>
+                        </div>
+                        <div className="mt-1 h-10 w-10 rounded-full border border-cyan-200/20 bg-cyan-200/10" />
+                      </div>
+                      <div className="mt-8 flex items-center gap-3">
+                        <div className="h-2 w-2 rounded-full bg-cyan-200 shadow-[0_0_16px_rgba(186,230,253,0.9)]" />
+                        <div className="h-px flex-1 bg-gradient-to-r from-cyan-200/50 to-transparent" />
+                        <div className="text-[11px] uppercase tracking-[0.28em] text-white/35">
+                          Engineered platform
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
+                      <div className="rounded-[24px] border border-white/10 bg-white/[0.04] p-5">
+                        <div className="text-[11px] uppercase tracking-[0.3em] text-white/40">
+                          Focus
+                        </div>
+                        <div className="mt-3 text-3xl font-semibold text-white">
+                          01
+                        </div>
+                        <div className="mt-2 text-sm leading-6 text-white/60">
+                          Blue emitter performance with stronger material resilience.
+                        </div>
+                      </div>
+
+                      <div className="rounded-[24px] border border-white/10 bg-white/[0.04] p-5">
+                        <div className="text-[11px] uppercase tracking-[0.3em] text-white/40">
+                          Signal
+                        </div>
+                        <div className="mt-3 flex items-center gap-2">
+                          <span className="h-2.5 w-2.5 rounded-full bg-emerald-300 shadow-[0_0_18px_rgba(110,231,183,0.85)]" />
+                          <span className="text-lg font-medium text-white">
+                            Active research
+                          </span>
+                        </div>
+                        <div className="mt-4 h-px bg-gradient-to-r from-emerald-200/45 to-transparent" />
+                        <div className="mt-4 text-sm leading-6 text-white/60">
+                          Visual identity aligned to precision chemistry and advanced display systems.
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
