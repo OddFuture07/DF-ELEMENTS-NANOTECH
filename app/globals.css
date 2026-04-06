@@ -16,7 +16,17 @@ body {
     radial-gradient(circle at top right, rgba(34, 211, 238, 0.1), transparent 24%),
     linear-gradient(180deg, #020617 0%, #020617 100%);
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:
+    var(--font-jakarta-sans),
+    "PingFang SC",
+    "Hiragino Sans GB",
+    "Microsoft YaHei",
+    "Noto Sans SC",
+    "Segoe UI",
+    sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
